@@ -26,7 +26,7 @@ const About = () => {
                         earning us the trust and satisfaction of our valued clients.
                     </p>
                     <p className='text-gray-500'>
-                        With over 5 years of experience, our skilled photographers and cinematographers use cutting-edge technology to bring your
+                        With over 9 years of experience, our skilled photographers and cinematographers use cutting-edge technology to bring your
                          wedding and special events to life. We seamlessly blend artistic creativity and professionalism to craft stunning visuals that you ll
                           cherish forever.
                     </p>
