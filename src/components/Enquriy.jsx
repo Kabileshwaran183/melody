@@ -27,7 +27,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="bg-white">
+        <section className="bg-white" id="contact">
             <div className="container mx-auto p-6 bg-white ">
                 <div className="flex flex-col md:flex-row w-full h-full justify-center">
 

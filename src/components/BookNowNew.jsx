@@ -6,7 +6,7 @@ const BookNowNew = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <section className="min-w-screen  relative">
+            <section className="min-w-screen  relative" id="book">
                 
                     <img className="w-full md:max-h-[180px] object-cover" src="/booknow2.gif" />
                     <div className="left-[31%] top-1/3 md:top-1/4 absolute h-[30%] md:h-[50%] w-[22%]  ">

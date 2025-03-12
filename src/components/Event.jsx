@@ -17,7 +17,7 @@ function Events() {
     const [ph, setPh] = useState(true);
 
     return (
-        <section className='bg-white'>
+        <section className='bg-white' id='events'>
             <div className="container bg-white ">
                 <h1 className="text-left font-semi-bold  text-xl md:text-3xl mb-4 px-8">📸 Capturing Timeless Moments</h1>
                 <p className="text-left font-semi-bold text-base md:text-xl mb-4 px-8 text-gray-500">"Photography is more than just capturing images; its about preserving emotions,
@@ -25,11 +25,22 @@ function Events() {
                     and we ensure that no detail is missed. Whether its the warmth of a wedding, the joy of a celebration, or the intimacy of a candid moment,
                     we bring creativity and precision to every shot. Our expertise in lighting, composition, and storytelling allows us to frame your most precious memories in a way that feels natural,
                     beautiful, and timeless. Let us turn your special moments into stunning visual treasures."</p>
+                <div className='flex flex-col md:flex-row gap-5 justify-center'>
+                    <div className='flex  gap-5 items-center justify-center  md:py-16 py-4 '>
+                        <button onClick={() => setPh(true)} className='bg-teal-500  p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl '>Wedding</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl '>Outdoorshoots</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl '>Indoorshoots</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl'>Birthday</button>
 
-                <div className='flex gap-5 items-center justify-start px-8 py-16'>
-                    <button onClick={() => setPh(true)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-xl md:text-3xl '>Photography</button>
-                    <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-xl md:text-3xl '>Wedding</button>
+                    </div>
+                    <div className='flex  gap-5 items-center justify-center   '>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl '>Puberty</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl'>Reception</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl'>Maternity</button>
+                        <button onClick={() => setPh(false)} className='bg-teal-500 p-3 rounded-lg text-white hover:scale-110 duration-300 delay-100  text-sm md:text-xl lg:text-3xl'>Commercialshoots</button>
+                    </div>
                 </div>
+
 
                 <Swiper
                     effect={'coverflow'}
@@ -83,7 +94,7 @@ function Events() {
                 </Swiper>
             </div>
         </section>
-       
+
     );
 }
 
