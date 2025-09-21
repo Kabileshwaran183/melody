@@ -18,5 +18,6 @@ import can09 from "/award/cad09.jpeg"
 
 
 export const Data = [img2, img3, img4, img5, img6,img7];
+export const Data1 = [img2, img3, img4, img5, img6, img7];
 
 export const Canimg = [can09, can08, can07, can06, can05, can04, can03, can01, can00];
